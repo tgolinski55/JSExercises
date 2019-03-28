@@ -17,4 +17,10 @@ function sumDouble(a, b){
 		return 2*(a+b)
 }
 
-console.log(sumDouble(3,3))
+function diff21(n){
+	if(n>21)
+		return 2*Math.abs(21-n);
+	else
+		return Math.abs(21-n);
+}
+console.log(diff21(23))
