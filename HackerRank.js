@@ -35,5 +35,10 @@ function makes10(a, b){
 	else
 		return false
 }
-
-console.log(makes10(3,10))
+function nearHundred(n){
+	if(Math.abs(100-n)<=10||Math.abs(200-n)<=10)
+		return true
+	else
+		return false
+}
+console.log(nearHundred(109))
