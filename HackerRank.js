@@ -5,4 +5,16 @@ function sleepIn(weekday, vacation){
 		return false;
 
 }
-console.log(sleepIn(false, true))
+
+function monkeyTrouble(aSmile, bSmile){
+	return (aSmile&&bSmile)||(!aSmile&&!bSmile)
+}
+
+function sumDouble(a, b){
+	if (a!=b)
+		return a+b
+	else
+		return 2*(a+b)
+}
+
+console.log(sumDouble(3,3))
