@@ -41,4 +41,17 @@ function nearHundred(n){
 	else
 		return false
 }
-console.log(nearHundred(109))
+function posNeg(a, b, negative){
+	if(negative)
+		if (!a&&!b)
+			return true
+		else
+			return false
+	else 
+		if (!a&&b||a&&!b)
+			return true
+		else
+			return false
+
+}
+console.log(posNeg(3,-1, false))
