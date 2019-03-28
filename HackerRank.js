@@ -23,4 +23,10 @@ function diff21(n){
 	else
 		return Math.abs(21-n);
 }
-console.log(diff21(23))
+function parrotTrouble(talking, hour){
+	if(talking&&(hour>20||hour<7))
+		return true
+	else
+		return false
+}
+console.log(parrotTrouble(true, 2))
