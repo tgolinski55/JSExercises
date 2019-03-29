@@ -54,4 +54,12 @@ function posNeg(a, b, negative){
 			return false
 
 }
-console.log(posNeg(3,-1, false))
+function notString(str){
+	if (str.length>=3)
+		var substr = str.substr(0,3);
+	if (substr=="not")
+		return str;
+	else
+		return "not "+str;
+}
+console.log(notString("x"));
