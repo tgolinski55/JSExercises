@@ -75,4 +75,10 @@ function frontBack(str){
 	else
 		return str;
 }
-console.log(frontBack("hello"));
+function front3(str){
+	if (str.length>2)
+		return str.substr(0,3).repeat(3);
+	else
+		return str.repeat(3);
+}
+console.log(front3("hello"));
