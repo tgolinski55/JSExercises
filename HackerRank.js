@@ -62,4 +62,11 @@ function notString(str){
 	else
 		return "not "+str;
 }
-console.log(notString("x"));
+function missingChar(str, n){
+	if (n>=1)
+		var substr = str.substr(0,n)+str.substr(n+1,str.length-1)
+	else
+		var substr = str.substr(1, str.length-1)
+	return substr;
+}
+console.log(missingChar("hello",0));
