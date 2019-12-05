@@ -69,4 +69,10 @@ function missingChar(str, n){
 		var substr = str.substr(1, str.length-1)
 	return substr;
 }
-console.log(missingChar("hello",0));
+function frontBack(str){
+	if (str.length>1)
+		return str[str.length-1]+str.substr(1,str.length-2)+str[0];
+	else
+		return str;
+}
+console.log(frontBack("hello"));
